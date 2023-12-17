@@ -1,0 +1,109 @@
+body {
+    background-color: #f7ecde;
+}
+
+::selection {
+    background-color: #fec260;
+}
+
+.book-title h1::after {
+    content: '';
+    position: absolute;
+    height: 25%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #fec260;
+    transition: height .5s;
+}
+
+@font-face {
+    font-family: 'pacifico-font';
+    src: url(../Fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'righteous-fontfamily';
+    src: url(../Fonts/Righteous-Regular.ttf);
+}
+
+.pacifico-font {
+    font-family: pacifico-font;
+}
+
+.righteous-fontfamily {
+    font-family: righteous-fontfamily;
+}
+
+.fs-50 {
+    font-size: 3.125rem;
+}
+
+.fs-25 {
+    font-size: 1.5625rem;
+}
+
+.book-title h1:hover::after {
+    height: 65%;
+}
+
+.border-dot {
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+}
+
+.head-lineargradient {
+    background-image: linear-gradient(90deg , #3ca55c 40%, #b5ac49 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.btn-submit {
+    background-color: #bb4120;
+}
+
+.submit-btn #subBtn:hover {
+    background-color: #a03315;
+}
+
+.form-control:focus {
+    border-color: #d99c39;
+    box-shadow: 0px 0px 0px .25rem #fec26055;
+}
+
+.w-20 {
+    width: 20px;
+}
+
+.h-20 {
+    height: 20px;
+}
+
+#lightBoxModel #lightBoxModelContent .circles span:first-child {
+    background-color: #f15f5d;
+}
+
+#lightBoxModel #lightBoxModelContent .circles span:nth-child(2) {
+    background-color: #febe2e;
+}
+
+#lightBoxModel #lightBoxModelContent .circles span:nth-child(3) {
+    background-color: #4db748;
+}
+
+.cursor-ptr {
+    cursor: pointer;
+}
+
+#lightBoxModel #lightBoxModelContent div ul li i {
+    color: #bb4120;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.fs-18 {
+    font-size: 18px;
+}

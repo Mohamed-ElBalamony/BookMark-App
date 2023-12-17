@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="./Style/all.min.css" />
+    <link rel="stylesheet" href="./Style/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Style/style.css" />
+    <link rel="stylesheet" href="./Style/media.css" />
+  </head>
+  <body>
+    <main>
+      <section class="py-5">
+        <div class="container">
+          <div class="book-title text-center text-capitalize mb-5">
+            <h1
+              class="d-inline-block position-relative z-1 pacifico-font fs-50"
+            >
+              bookmarker
+            </h1>
+          </div>
+          <div class="border-dot h-25 py-3">
+            <div class="text-center">
+              <h2 class="fs-25 righteous-fontfamily head-lineargradient">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+              </h2>
+            </div>
+            <div class="book-mark-inputs">
+              <div>
+                <label for="siteName" class="text-capitalize">
+                  <i class="fa-solid fa-book-bookmark"></i>
+                  site name
+                </label>
+                <input
+                  id="siteName"
+                  class="form-control mt-2"
+                  placeholder="Bookmark Name"
+                />
+              </div>
+              <div class="mt-4">
+                <label for="siteUrl" class="text-capitalize">
+                  <i class="fa-solid fa-link"></i>
+                  site URL
+                </label>
+                <input
+                  id="siteUrl"
+                  class="form-control mt-2"
+                  placeholder="Bookmark URL"
+                />
+              </div>
+            </div>
+            <div class="submit-btn text-center mt-3">
+              <button
+                id="subBtn"
+                class="btn btn-submit text-capitalize fs-5 px-5 text-white"
+              >
+                submit
+              </button>
+              <button
+                id="updateBtn"
+                class="btn btn-success text-capitalize fs-5 px-5 d-none"
+              >
+                update
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <input
+            id="searchInput"
+            placeholder="Search By Bookmark Name"
+            class="form-control"
+          />
+        </div>
+      </section>
+      <section class="mt-4">
+        <div class="container">
+          <table class="table">
+            <thead class="text-center text-capitalize">
+              <th>index</th>
+              <th>website name</th>
+              <th>visit</th>
+              <th>update</th>
+              <th>delete</th>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <div
+          id="lightBoxModel"
+          class="position-fixed top-0 start-0 end-0 bottom-0 z-1 bg-black bg-opacity-25 d-none justify-content-center align-items-center"
+        >
+          <div
+            id="lightBoxModelContent"
+            class="bg-white w-30 p-4 rounded-2 w-100-xsm w-90-sm w-80-md w-lg-50 w-xl-40 w-xxl-30"
+          >
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="circles d-flex column-gap-2">
+                <span class="d-block h-20 w-20 rounded-circle"></span>
+                <span class="d-block h-20 w-20 rounded-circle"></span>
+                <span class="d-block h-20 w-20 rounded-circle"></span>
+              </div>
+              <div id="closeBtn" class="cursor-ptr">
+                <i class="fa-solid fa-xmark fs-3"></i>
+              </div>
+            </div>
+            <div class="mt-4">
+              <p class="text-capitalize fw-bold">
+                site name or url is not valid , please follow the rules below :
+              </p>
+              <ul class="list-unstyled">
+                <li class="text-capitalize">
+                  <i class="fa-regular fa-circle-right p-2"></i>
+                  site name must contains at least 3 characters
+                </li>
+                <li class="text-capitalize">
+                  <i class="fa-regular fa-circle-right p-2"></i>
+                  site url must be valid one
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./Js/main.js"></script>
+  </body>
+</html>
